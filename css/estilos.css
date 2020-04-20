@@ -1,0 +1,736 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url(../imagenes/fondo2.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 400px;
+} 
+
+
+/*cabecera*/
+header{
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	font-family: sans-serif , cursive;
+	background-color: #4F039B;
+	color:#FFF;
+	z-index: 10;
+} header h1{
+	font-size: 20px;
+	margin-left: 20px;
+} header img{
+	width: 50px;
+	height: 50px;
+}
+
+/*********** banner ************/
+.banner{
+	width: 100%;
+	height: 450px;
+	background-image: url("../imagenes/bannertune.jpg");
+	filter: brightness(0.8);
+	object-fit: cover;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	margin-bottom: 0px;
+} .textobanner p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 80px;
+	color: white;
+	position: absolute;
+	margin-top: -300px;
+	margin-left: 5%;
+}
+/******************* container ***********/
+
+.container{
+	width: 100%;
+	height: auto;
+	margin-bottom:30px;
+	display: flex;
+	text-align: center;
+}
+/*********************** sec-articulos**************/
+.container .sec-articulos{
+	width: 60%;
+	height: 500px;
+    display: flex;
+    flex-direction: column;
+} .container .sec-articulos div{
+	margin-bottom: 0px;
+	background-color:#FFF;
+}
+.container .sec-articulos .info{
+
+} .container .sec-articulos .info h2{
+	margin-left: 10%;
+	text-align: left;
+color: #4F039B;
+} .container .sec-articulos .info p{
+	width: 80%;
+	margin: 0 auto;
+   font-size: 20px;
+   text-align: left;
+   text-align: justify;
+}
+
+.container .sec-articulos .generos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#FFF;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.container .sec-articulos .generos img{
+	width: 30%;
+	height: 250px;
+	transition: transform 1s;
+} .container .sec-articulos .generos img:hover{
+	cursor: pointer;
+	transform: scale(0.9);
+}
+/******************* sec-canciones ******/
+
+.container .sec-canciones{
+	width: 40%;
+	background-color:#13003D;
+	height: 500px;
+	overflow: auto;
+	color: #FFF;
+} .container .sec-canciones .cont-cancion{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.container .sec-canciones .cont-cancion .cancion{
+	width: 60%;
+}
+
+.container .sec-canciones .cont-cancion a{
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #FFF;
+    background-color: #4F039B;
+	padding-left: 5px;
+	padding-right: 5px;
+	border:3px solid  #4F039B;
+	line-height: 50px;
+	border-radius: 10px;
+} .container .sec-canciones .cont-cancion a:hover{
+background:none;
+border:3px solid #4F039B;
+} 
+
+.container .sec-canciones .cont-cancion a:active{
+ transform: scale(0.8);
+}
+
+/******** scroll ****/
+
+.sec-canciones::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+} .sec-canciones::-webkit-scrollbar-thumb{
+	background-color:#4F039B;
+	border-radius: 4px;
+} .sec-canciones::-webkit-scrollbar-track{
+		background-color:#b3b3b3;
+		border-radius: 4px;
+}
+
+/*****************footer****/
+
+footer{
+	width: 100%;
+	height: 150px;
+	background-color:#20202F;
+	display: flex;
+	flex-direction: column;
+} 
+
+footer .logo-footer {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+footer .logo-footer  .logotipo-footer{
+ width: 100px;
+ height: 100px;
+}
+
+footer .redes{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+} footer .redes img{
+	width: 30px;
+	height: 30px;
+	transition: transform 0.5s, border-radius 1s;
+} footer .redes img:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+  background-color:#FFF;
+  border-radius:100%;
+}
+
+/*********************************** LAPTOP ************************************************************************************/
+@media screen and (max-width: 1181px){
+
+/*cabecera*/
+header{
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	font-family: sans-serif , cursive;
+	background-color: #4F039B;
+	color:#FFF;
+	z-index: 10;
+} header h1{
+	font-size: 20px;
+	margin-left: 20px;
+} header img{
+	width: 50px;
+	height: 50px;
+}
+
+/*********** banner ************/
+.banner{
+	width: 100%;
+	height: 450px;
+	background-image: url("../imagenes/bannertune.jpg");
+	filter: brightness(0.8);
+	object-fit: cover;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	margin-bottom: 0px;
+} .textobanner p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 60px;
+	color: white;
+	position: absolute;
+	margin-top: -300px;
+	margin-left: 5%;
+}
+/******************* container ***********/
+
+.container{
+	width: 100%;
+	height: auto;
+	margin-bottom:0px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+/*********************** sec-articulos**************/
+.container .sec-articulos{
+	width: 100%;
+	height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:0px;
+} .container .sec-articulos div{
+	margin-bottom: 0px;
+	background-color:#FFF;
+}
+.container .sec-articulos .info{
+
+} .container .sec-articulos .info h2{
+	margin-left: 10%;
+	text-align: left;
+color: #4F039B;
+} .container .sec-articulos .info p{
+	width: 80%;
+	margin: 0 auto;
+   font-size: 15px;
+   text-align: left;
+   text-align: justify;
+}
+
+.container .sec-articulos .generos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#FFF;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.container .sec-articulos .generos img{
+	width: 30%;
+	height: 180px;
+	transition: transform 1s;
+} .container .sec-articulos .generos img:hover{
+	cursor: pointer;
+	transform: scale(0.9);
+}
+/******************* sec-canciones ******/
+
+.container .sec-canciones{
+	width: 100%;
+	background-color:#13003D;
+	height: 545px;
+	overflow: auto;
+	color: #FFF;
+	margin-top: -65px;
+} .container .sec-canciones .cont-cancion{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.container .sec-canciones .cont-cancion .cancion{
+	width: 60%;
+}
+
+.container .sec-canciones .cont-cancion a{
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #FFF;
+    background-color: #4F039B;
+	padding-left: 5px;
+	padding-right: 5px;
+	border:3px solid  #4F039B;
+	line-height: 50px;
+	border-radius: 10px;
+} .container .sec-canciones .cont-cancion a:hover{
+background:none;
+border:3px solid #4F039B;
+} 
+
+.container .sec-canciones .cont-cancion a:active{
+ transform: scale(0.8);
+}
+
+/******** scroll ****/
+
+.sec-canciones::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+} .sec-canciones::-webkit-scrollbar-thumb{
+	background-color:#4F039B;
+	border-radius: 4px;
+} .sec-canciones::-webkit-scrollbar-track{
+		background-color:#b3b3b3;
+		border-radius: 4px;
+}
+
+/*****************footer****/
+
+footer{
+	width: 100%;
+	height: 150px;
+	background-color:#20202F;
+	display: flex;
+	flex-direction: column;
+} 
+
+footer .logo-footer {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+footer .logo-footer  .logotipo-footer{
+ width: 100px;
+ height: 100px;
+}
+
+footer .redes{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+} footer .redes img{
+	width: 30px;
+	height: 30px;
+	transition: transform 0.5s, border-radius 1s;
+} footer .redes img:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+  background-color:#FFF;
+  border-radius:100%;
+}
+
+}
+
+/************************************* TABLET ***********************************************************************************/
+@media screen and (max-width: 481px){
+
+/*cabecera*/
+header{
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	font-family: sans-serif , cursive;
+	background-color: #4F039B;
+	color:#FFF;
+	z-index: 10;
+} header h1{
+	font-size: 20px;
+	margin-left: 20px;
+} header img{
+	width: 50px;
+	height: 50px;
+}
+
+/*********** banner ************/
+.banner{
+	width: 100%;
+	height: 250px;
+	background-image: url("../imagenes/bannertune.jpg");
+	filter: brightness(0.8);
+	object-fit: cover;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	margin-bottom: 0px;
+} .textobanner p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	margin-top: -150px;
+	margin-left: 5%;
+}
+/******************* container ***********/
+
+.container{
+	width: 100%;
+	height: auto;
+	margin-bottom:0px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+/*********************** sec-articulos**************/
+.container .sec-articulos{
+	width: 100%;
+	height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:0px;
+} .container .sec-articulos div{
+	margin-bottom: 0px;
+	background-color:#FFF;
+}
+.container .sec-articulos .info{
+
+} .container .sec-articulos .info h2{
+	margin-left: 10%;
+	text-align: left;
+color: #4F039B;
+} .container .sec-articulos .info p{
+	width: 80%;
+	margin: 0 auto;
+   font-size: 15px;
+   text-align: left;
+   text-align: justify;
+}
+
+.container .sec-articulos .generos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#FFF;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.container .sec-articulos .generos img{
+	width: 30%;
+	height: 180px;
+	transition: transform 1s;
+} .container .sec-articulos .generos img:hover{
+	cursor: pointer;
+	transform: scale(0.9);
+}
+/******************* sec-canciones ******/
+
+.container .sec-canciones{
+	width: 100%;
+	background-color:#13003D;
+	height: 545px;
+	overflow: auto;
+	color: #FFF;
+	margin-top: 5px;
+} .container .sec-canciones .cont-cancion{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.container .sec-canciones .cont-cancion .cancion{
+	width: 60%;
+	height: 30px;
+}
+
+.container .sec-canciones .cont-cancion a{
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #FFF;
+    background-color: #4F039B;
+	padding-left: 5px;
+	padding-right: 5px;
+	border:3px solid  #4F039B;
+	line-height: 20px;
+	border-radius: 10px;
+} .container .sec-canciones .cont-cancion a:hover{
+background:none;
+border:3px solid #4F039B;
+} 
+
+.container .sec-canciones .cont-cancion a:active{
+ transform: scale(0.8);
+}
+
+/******** scroll ****/
+
+.sec-canciones::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+} .sec-canciones::-webkit-scrollbar-thumb{
+	background-color:#4F039B;
+	border-radius: 4px;
+} .sec-canciones::-webkit-scrollbar-track{
+		background-color:#b3b3b3;
+		border-radius: 4px;
+}
+
+/*****************footer****/
+
+footer{
+	width: 100%;
+	height: 150px;
+	background-color:#20202F;
+	display: flex;
+	flex-direction: column;
+} 
+
+footer .logo-footer {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+footer .logo-footer  .logotipo-footer{
+ width: 100px;
+ height: 100px;
+}
+
+footer .redes{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+} footer .redes img{
+	width: 30px;
+	height: 30px;
+	transition: transform 0.5s, border-radius 1s;
+} footer .redes img:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+  background-color:#FFF;
+  border-radius:100%;
+}
+
+
+}
+
+/*********************************************** SMARTPHONE ***********************************************************************/
+@media screen and (max-width: 475px){
+
+/*cabecera*/
+header{
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	top: 0;
+	position: fixed;
+	display: flex;
+	font-family: sans-serif , cursive;
+	background-color: #4F039B;
+	color:#FFF;
+	z-index: 10;
+} header h1{
+	font-size: 20px;
+	margin-left: 20px;
+} header img{
+	width: 50px;
+	height: 50px;
+}
+
+/*********** banner ************/
+.banner{
+	width: 100%;
+	height: 200px;
+	background-image: url("../imagenes/bannertune.jpg");
+	filter: brightness(0.8);
+	object-fit: cover;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	margin-bottom: 0px;
+} .textobanner p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	margin-top: -110px;
+	margin-left: 5%;
+}
+/******************* container ***********/
+
+.container{
+	width: 100%;
+	height: auto;
+	margin-bottom:0px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+/*********************** sec-articulos**************/
+.container .sec-articulos{
+display:none;
+} .container .sec-articulos div{
+	display: none;
+}
+ .container .sec-articulos .info h2{
+	display: none;
+} .container .sec-articulos .info p{
+	display: none;
+}
+
+.container .sec-articulos .generos{
+	display: none;
+}
+
+.container .sec-articulos .generos img{
+display: none;
+} 
+/******************* sec-canciones ******/
+
+.container .sec-canciones{
+	width: 100%;
+	background:none;
+	height: 545px;
+	overflow: auto;
+	color: #FFF;
+	margin-top: 0px;
+} .container .sec-canciones .cont-cancion{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.container .sec-canciones .cont-cancion .cancion{
+	width: 60%;
+	height: 30px;
+}
+
+.container .sec-canciones .cont-cancion a{
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #FFF;
+    background-color: #4F039B;
+	padding-left: 5px;
+	padding-right: 5px;
+	border:3px solid  #4F039B;
+	line-height: 20px;
+	border-radius: 10px;
+} .container .sec-canciones .cont-cancion a:hover{
+background:none;
+border:3px solid #4F039B;
+} 
+
+.container .sec-canciones .cont-cancion a:active{
+ transform: scale(0.8);
+}
+
+/******** scroll ****/
+
+.sec-canciones::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+} .sec-canciones::-webkit-scrollbar-thumb{
+	background-color:#4F039B;
+	border-radius: 4px;
+} .sec-canciones::-webkit-scrollbar-track{
+		background-color:#b3b3b3;
+		border-radius: 4px;
+}
+
+/*****************footer****/
+
+footer{
+	width: 100%;
+	height: 150px;
+	background-color:#20202F;
+	display: flex;
+	flex-direction: column;
+} 
+
+footer .logo-footer {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+footer .logo-footer  .logotipo-footer{
+ width: 100px;
+ height: 100px;
+}
+
+footer .redes{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+} footer .redes img{
+	width: 20px;
+	height: 20px;
+	transition: transform 0.5s, border-radius 1s;
+} footer .redes img:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+  background-color:#FFF;
+  border-radius:100%;
+}
+
+}
